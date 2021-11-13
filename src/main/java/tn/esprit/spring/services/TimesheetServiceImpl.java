@@ -137,11 +137,6 @@ public boolean ajouterMission(Mission mission)
 	}
 	
 	
-	
-	
-	
-	
-	
 	@Override
 	public int validerTimesheet(int missionId, int employeId, Date dateDebut, Date dateFin, int validateurId) {
 		logger.info("In valider Timesheet");

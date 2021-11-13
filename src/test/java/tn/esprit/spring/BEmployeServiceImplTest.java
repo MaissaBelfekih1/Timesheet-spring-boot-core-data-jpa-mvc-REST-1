@@ -45,8 +45,7 @@ import tn.esprit.spring.services.EmployeServiceImpl;
 @FixMethodOrder(MethodSorters.DEFAULT)
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class EmployeServiceImplTest {
-	
+public class BEmployeServiceImplTest {
 	
 	@Autowired
 	EmployeServiceImpl es=new EmployeServiceImpl();
@@ -66,7 +65,6 @@ public class EmployeServiceImplTest {
 	Contrat contrat= new Contrat(dateDebut, "test", 7000);
 	String sDate1="2021-10-13";    
 	String sDate2="2021-10-22";  
-
 
 	//add employee
 	@Test

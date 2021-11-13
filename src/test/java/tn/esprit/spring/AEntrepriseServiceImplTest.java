@@ -18,7 +18,7 @@ import tn.esprit.spring.services.IEntrepriseService;
 @FixMethodOrder(MethodSorters.DEFAULT)
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class EntrepriseServiceImplTest {
+public class AEntrepriseServiceImplTest {
 	@Autowired
 	IEntrepriseService se;
 	
