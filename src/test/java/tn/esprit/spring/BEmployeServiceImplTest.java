@@ -122,7 +122,7 @@ public class BEmployeServiceImplTest {
 	} 
 	
 	
-
+	//getAllEmployee
 	@Test
 	public void Testcase_6()
 	{
@@ -132,7 +132,7 @@ public class BEmployeServiceImplTest {
 	}
 	
 	
-	
+	//getAllEmployeeByEntreprise
 	@Test
 	public void Testcase_7()
 	{
@@ -143,7 +143,7 @@ public class BEmployeServiceImplTest {
 	}
 	 
 	  
-	
+	//AddContart
 	 @Test
 	  public void Testcase_8()
 			  { 	es.ajouterContrat(contrat);
@@ -152,7 +152,7 @@ public class BEmployeServiceImplTest {
 			  
 	
 	
-	
+	//affecterContartToEmployee
 	  @Test
 		public void Testcase_9()
 			{
@@ -162,7 +162,7 @@ public class BEmployeServiceImplTest {
 				Assertions.assertThat(d.getReference()).isEqualTo(1);
 			}
 		
-
+	//affecterEmpToDepartement
 	  @Test
 			public void Testcase_10()
 			{
@@ -189,7 +189,7 @@ public class BEmployeServiceImplTest {
       */
 		
 	  
-	
+	   //GetSalireMoyByDept
 		@Test
 		public void Testcase_11() {
 			Double e= es.getSalaireMoyenByDepartementId(1);
@@ -214,7 +214,7 @@ public class BEmployeServiceImplTest {
 	}*/
   
   
- 
+  //DeleteContart
     @Test
 	public void Testcase_12()
 	{
@@ -230,7 +230,7 @@ public class BEmployeServiceImplTest {
         Assertions.assertThat(c).isNull(); }
 
 	
-   
+   //DeleteEmployee
 	 @Test
 	 public void Testcase_13()
 	 {
