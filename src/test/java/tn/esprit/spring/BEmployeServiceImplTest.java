@@ -50,6 +50,7 @@ public class BEmployeServiceImplTest {
 	private Date dateDebut = new Date();
 	Employe employe = new Employe("maissa", "belfekih", "maissa@esprit.tn",true ,Role.CHEF_DEPARTEMENT);
 	Contrat contrat= new Contrat(dateDebut, "test", 7000);
+	Contrat contrat2= new Contrat(dateDebut, "test", 7000);
 	String sDate1="2021-10-13";    
 	String sDate2="2021-10-22";  
 
@@ -234,12 +235,16 @@ public class BEmployeServiceImplTest {
 	        
 
 	 }
-       
-	/* 
-		@Test
-		public void deleteContratByIdTest()
+      
+      
+	
+	 @Test
+		public void Testcase_14()
 		{
-		    es.deleteContratById(1);
+			
+			es.ajouterContrat(contrat);
+			contrat2.setReference(2);
+		    es.deleteContratById(2);
 		    Contrat c = null;
 
 	        Optional<Contrat> optionaContrat = contratRepoistory.findById(10);
@@ -249,9 +254,9 @@ public class BEmployeServiceImplTest {
 	        }
 	        
 	        Assertions.assertThat(c).isNull();
-
-			
+	        
 		}
+		/* 
 		@Test
 		public void deleteAllContratJPQLTest() {
 			es.deleteAllContratJPQL();
