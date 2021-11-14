@@ -55,20 +55,20 @@ public class CTimesheetTest {
 	    Date date = new Date(1633824000000l);
 		Date date2 = new Date(1633824000000l);
 		
-		//test ajouter mission
+		
 		@Test
 		public void Testcase_1()
 		{
 			assertEquals(true, time.ajouterMission(m));
 			
 		}
-		//test affecter mission a departement
+		
 		@Test
 		public void Testcase_2()
 		{
 			assertEquals(1,time.affecterMissionADepartement(1, 1));
 		}
-		//test ajouter timesheet
+		
 		@Test
 		public void Testcase_3()
 		{
