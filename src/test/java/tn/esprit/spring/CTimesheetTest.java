@@ -85,7 +85,7 @@ public class CTimesheetTest {
 			empserv.affecterEmployeADepartement(e.getId(),1);
 			assertEquals(time.validerTimesheet(1,2,date,date2,1),1); 
 		}
-		//test find all missions by employe
+		//test find all missions by employee
 		 @Test
 		 public void Testcase_5()
 		 {
