@@ -239,6 +239,12 @@ public class BEmployeServiceImplTest {
 		public void Testcase_14()
 		{
 			
+		 
+		 
+		 
+		 
+		 
+		 
 			es.ajouterContrat(contrat);
 			contrat2.setReference(2);
 		    es.deleteContratById(2);
