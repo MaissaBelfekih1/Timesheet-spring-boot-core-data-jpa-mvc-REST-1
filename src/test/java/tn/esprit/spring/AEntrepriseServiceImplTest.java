@@ -23,7 +23,7 @@ public class AEntrepriseServiceImplTest {
 	IEntrepriseService se;
 	
 	Entreprise e1 = new Entreprise("mouna","mariem");
-	Entreprise e2 = new  Entreprise("mouna1","mariem2");
+	Entreprise e2 = new Entreprise("mouna1","mariem2");
 	Departement d1 = new Departement("info");
 	Entreprise e = new Entreprise();
 	
