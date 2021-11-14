@@ -51,7 +51,7 @@ public class BEmployeServiceImplTest {
 	String sDate1="2021-10-13";    
 	String sDate2="2021-10-22";  
 
-	//add employeeTest
+	//add employeeTest..
 	@Test
 	public void Testcase_1()
 	{  	es.ajouterEmploye(employe);
@@ -239,12 +239,6 @@ public class BEmployeServiceImplTest {
 		public void Testcase_14()
 		{
 			
-		 
-		 
-		 
-		 
-		 
-		 
 			es.ajouterContrat(contrat);
 			contrat2.setReference(2);
 		    es.deleteContratById(2);
