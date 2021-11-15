@@ -10,6 +10,18 @@ services:
       ports:
         - "3366:3306"
         
+    phpmyadmin:
+      image: phpmyadmin/phpmyadmin:latest
+      container_name: my-php-myadmin
+      ports:
+        - "8082:80"
+        
+      depends_on:
+        - db
+      environment:
+        SPRING_DATASOURCE_USERNAME: root
+        SPRING_DATASOURCE_PASSWORD: 
+        
       
     
   
