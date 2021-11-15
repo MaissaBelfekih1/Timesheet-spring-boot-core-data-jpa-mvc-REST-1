@@ -26,6 +26,6 @@ services:
       depends_on:                           
         - db                              
       environment:
-        SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/timesheet?createDatabaseIfNotExist=true
+        SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/timesheet?createDatabaseIfNotExist=true
         SPRING_DATASOURCE_USERNAME: root
         SPRING_DATASOURCE_PASSWORD: 
