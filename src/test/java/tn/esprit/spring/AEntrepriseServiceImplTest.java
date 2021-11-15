@@ -27,7 +27,7 @@ public class AEntrepriseServiceImplTest {
 	Departement d1 = new Departement("info");
 	Entreprise e = new Entreprise();
 	
-	
+	                                                                                                
 
 	@Test
     public void Testcase_1(){
@@ -63,7 +63,7 @@ public class AEntrepriseServiceImplTest {
 
     }
 	
-	
+	                                               
 	 
 	 @Test
 	    public void Testcase_6(){
