@@ -3,7 +3,7 @@ version: '3.3'
 services:
     db:
       image: mysql:latest
-      container_name: mysql-db  
+      container_name: mysqlcontainer 
       environment:
        MYSQL_DATABASE: timesheet
        MYSQL_ALLOW_EMPTY_PASSWORD: 1
@@ -14,7 +14,7 @@ services:
     
   
     customerservice:                        
-      image: dockerimage           
+      image: maissabelfekih/dockerimage           
       container_name: timesheetcontainer1
       build:
         context: .                          
@@ -27,4 +27,5 @@ services:
         - db                              
       environment:
         SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/timesheet?createDatabaseIfNotExist=true
-        
+        SPRING_DATASOURCE_USERNAME: root
+        SPRING_DATASOURCE_PASSWORD: 
