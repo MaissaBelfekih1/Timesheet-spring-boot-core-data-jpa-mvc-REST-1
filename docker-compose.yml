@@ -1,0 +1,30 @@
+version: '3.3'
+
+services:
+    db:
+      image: mysql:latest
+      container_name: mysql-db  
+      environment:
+       MYSQL_DATABASE: timesheet
+       MYSQL_ALLOW_EMPTY_PASSWORD: 1
+      ports:
+        - "3366:3306"
+        
+      
+    
+  
+    customerservice:                        
+      image: dockerimage           
+      container_name: timesheetcontainer1
+      build:
+        context: .                          
+        dockerfile: Dockerfile             
+      ports:
+        - "8083:8083"                     
+
+
+      depends_on:                           
+        - db                              
+      environment:
+        SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/timesheet?createDatabaseIfNotExist=true
+        
