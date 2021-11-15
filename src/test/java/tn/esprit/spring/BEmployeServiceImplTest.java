@@ -51,7 +51,7 @@ public class BEmployeServiceImplTest {
 
 	
 	
-	//add employeeTest..
+	//add employeeTest
 	@Test
 	public void Testcase_1()
 	{  	es.ajouterEmploye(employe);
